@@ -33,16 +33,24 @@ const updateClock = () => {
 
 setInterval(updateClock, 1000);
 
-const dayElement = document.querySelector('.Day');
+const dayElement = document.querySelector('.day');
 
 const updateDay = () => {
   const now = new Date();
 
-  const dayOfWeek = now.toLocaleDateString(undefined, { weekday: 'long' });
+  const options = { weekday: 'long' };
+  const dayOfWeek = new Intl.DateTimeFormat('en-US', options).format(now);
 
-  const formattedDay = `
-    <span>Current Day</span>:
-    <span>${dayOfWeek}</span>
-  `;
-  dayElement.innerHTML = formattedDay;
+  dayElement.textContent = dayOfWeek;
 };
+
+// Call the function to initially set the day
+updateDay();
+
+// Update the day every second (optional)
+setInterval(updateDay, 1000);
+
+
+ 
+//   dayElement.innerHTML = formattedDay;
+// };

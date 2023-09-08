@@ -49,10 +49,12 @@ img{
 h3{
     text-align: center;
     margin-top: 3rem;
+    color: #2e0022;
 }
 
 p{
     text-align: center;
+    color: #2e0022;
 }
 
 button{
@@ -86,21 +88,17 @@ button{
 
 h4{
     font-size: 12px;
-   
+   font-weight: 600;
 }
 
-.day{
-    background: #fff;
-    padding: 8px 16px;
-    white-space: nowrap;
-    border-radius: 8px;
-}
 
 .Time{
     background: #fff;
     padding: 8px 16px;
     white-space: nowrap;
     border-radius: 8px;
+    color: #2e0022;
+    font-weight: 600;
     /* width: 90%; */
 }
 
@@ -109,4 +107,8 @@ h4{
     padding: 8px 16px;
     white-space: nowrap;
     border-radius: 8px;
+    font-weight: 600;
+    color: #2e0022;
+
 }
+
