@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-self: center;
+    overflow: hidden;
 }
 
 .middle{
