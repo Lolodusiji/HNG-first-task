@@ -6,6 +6,10 @@
     font-size: 14px;
 }
 
+body{
+    overflow-y: hidden;
+}
+
 .generalcontainer{
     background: url(./Colored\ Shapes\ 2.svg);
     width: 100%;
@@ -83,5 +87,6 @@ h4{
     font-size: 12px;
     background: #fff;
     padding: 8px 16px;
+    white-space: nowrap;
     border-radius: 8px;
 }
