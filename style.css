@@ -41,14 +41,14 @@ img{
 .picture{
     /* background:url(./my\ picture.jpg); */
     /* border-radius: 50%; */
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin: auto;
 }
 
 h3{
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     color: #2e0022;
 }
 
@@ -59,12 +59,13 @@ p{
 
 button{
     /* text-align: center; */
-    width: 35%;
+    width: 40%;
     margin: auto;
     outline: none;
     border: none;
     display: flex;
     align-items: center;
+    border-radius: 8px;
     justify-content: center;
     margin-top: 1rem;
     white-space: nowrap;
