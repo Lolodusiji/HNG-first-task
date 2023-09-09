@@ -1,5 +1,5 @@
 document.getElementById("redirectButton").addEventListener("click", function() {
-    window.location.href = "https://github.com/Lolodusiji"; // Replace with the URL you want to redirect to
+    window.location.href = "https://github.com/Lolodusiji/HNG-first-task"; // Replace with the URL you want to redirect to
   });
   
 //   // Create a new Date object for the current date and time in the UTC timezone
