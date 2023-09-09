@@ -14,21 +14,29 @@ const clockElement = document.querySelector('.Time');
 
 const updateClock = () => {
   const now = new Date();
-  
-  const hours = now.getHours();
-  const minutes = now.getMinutes();
-  const seconds = now.getSeconds();
-  
-  console.log(hours, minutes, seconds);
-  
-  const formattedTime = `
+
+  const formattedTime = now.getTime();
+
+  const timeHtml = `
     <span>UTC</span>:
-    <span>${hours}</span> :
-    <span>${minutes}</span> :
-    <span>${seconds}</span>
-  `;
+    <span>${formattedTime}</span> 
+  `
   
-  clockElement.innerHTML = formattedTime ;
+  
+//   const hours = now.getHours();
+//   const minutes = now.getMinutes();
+//   const seconds = now.getSeconds();
+  
+//   console.log(hours, minutes, seconds);
+  
+//   const formattedTime = `
+//     <span>UTC</span>:
+//     <span>${hours}</span> :
+//     <span>${minutes}</span> :
+//     <span>${seconds}</span>
+//   `;
+  
+  clockElement.innerHTML = timeHtml;
 };
 
 setInterval(updateClock, 1000);
